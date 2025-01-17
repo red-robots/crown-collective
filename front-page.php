@@ -54,15 +54,14 @@ get_header();
                 $image = $brand["sponsor_image"];
                 $url = $brand["sponsor_link"];
             ?>
-              <a class="brand-item hexagon" href="/vendors/#<?=$url->slug ?? '' ?>">
-                <div class="brand-feat-img">
+              <a class="hexagon" href="/vendors/#<?=$url->slug ?? '' ?>">
+                <div class="sponsor-img">
                   <?php if( !empty( $image ) ){ ?>
                     <img src="<?php echo esc_url($image["url"]); ?>" alt="<?php echo esc_attr($image["alt"]); ?>" />
                   <?php } else { ?>
                     <img src="<?php echo get_template_directory_uri(); ?>/images/image-not-available.jpg" alt="no image" />
                   <?php } ?>
                 </div>
-                <h3 class="brand-title"><?php echo $title; ?></h3>
               </a>
             <?php } ?>
           </div>
