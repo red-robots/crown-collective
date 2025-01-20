@@ -1376,22 +1376,22 @@ h6{font-size:.85rem}
 .mobile-menu{display:none}
 .mobile-navigation{display:block;position:fixed;top:0;right:-100%;max-width:100%;width:100%;height:100%;overflow-x:hidden;overflow-y:auto;-webkit-transition:all ease .3s;transition:all ease .3s;z-index:-999}
 .mobile-navigation.active{right:0;z-index:500}
-.footer{background-color:#8fd2ae;padding-top:50px;padding-bottom:50px}
+.footer{background-color:#8dd1c5;padding-top:50px;padding-bottom:50px}
 .footer-logo{width:103px;padding-right:15px}
 .footer-logo a,.footer-logo img{width:100%;display:block;height:auto;float:left}
 .footer-inner{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-self:center;-ms-flex-item-align:center;align-self:center}
 .footer-newsletter{text-align:center;max-width:400px}
-.footer-newsletter .gform_title{color:#074d79;font-size:24px}
-.footer-newsletter .gform_description{color:#074d79;font-size:22px}
-.footer-newsletter #gform_fields_1{border:1px solid #074d79;-webkit-column-gap:0;-moz-column-gap:0;column-gap:0;display:-webkit-box;display:-ms-flexbox;display:flex;width:400px}
+.footer-newsletter .gform_title{color:#007197;font-size:24px}
+.footer-newsletter .gform_description{color:#007197;font-size:22px}
+.footer-newsletter #gform_fields_1{border:1px solid #007197;-webkit-column-gap:0;-moz-column-gap:0;column-gap:0;display:-webkit-box;display:-ms-flexbox;display:flex;width:400px}
 .footer-newsletter #field_1_1,.footer-newsletter #field_submit{width:150%}
-.footer-newsletter #field_1_1 input,.footer-newsletter #field_submit input{background:transparent;border:0;-webkit-box-shadow:none;box-shadow:none;color:#074d79}
-.footer-newsletter #field_1_1 input:hover,.footer-newsletter #field_submit input:hover{color:#c58429}
+.footer-newsletter #field_1_1 input,.footer-newsletter #field_submit input{background:transparent;border:0;-webkit-box-shadow:none;box-shadow:none;color:#007197}
+.footer-newsletter #field_1_1 input:hover,.footer-newsletter #field_submit input:hover{color:#c79249}
 .footer-newsletter #field_1_1 input{text-align:left}
 .footer-newsletter #field_submit{width:40%}
 .footer .social-media{text-align:right}
-.footer .social-media a{color:#074d79;display:inline-block;font-size:2rem;margin-left:15px;text-align:center}
-.footer .social-media a:hover{color:#c58429}
+.footer .social-media a{color:#007197;display:inline-block;font-size:2rem;margin-left:15px;text-align:center}
+.footer .social-media a:hover{color:#c79249}
 .padding-tb-70{padding-top:70px;padding-bottom:70px}
 .padding-tb-100{padding-top:100px;padding-bottom:100px}
 .padding-tb-150{padding-top:150px;padding-bottom:150px}
@@ -1423,10 +1423,10 @@ h6{font-size:.85rem}
 .content-1 .feat-img-wrap,.content-1 .content{width:50%}
 .content-1 .title{color:#84735e;font-family:"PlayfairDisplay Regular";font-size:3.1rem;margin-bottom:30px}
 .content-1 .description{padding-right:12%}
-.sponsor{background-color:#074d79;text-align:center}
+.sponsor{background-color:#007197;text-align:center}
 .sponsor .wrapper{max-width:950px}
-.sponsor-title{color:#c58429;font-size:32px;margin-bottom:15px}
-.sponsor-content{color:#c58429;font-size:18px}
+.sponsor-title{color:#c79249;font-size:32px;margin-bottom:15px}
+.sponsor-content{color:#c79249;font-size:18px}
 .sponsor-wrapper{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;gap:10px;max-width:325px;margin:30px auto 0}
 .sponsor .hexagon{background-image:url("images/hexagon.svg");background-size:cover;background-repeat:no-repeat;height:128px;width:114px;-webkit-clip-path:polygon(0 25%,0 75%,50% 102%,100% 75%,100% 25%,50% -2%);clip-path:polygon(0 25%,0 75%,50% 102%,100% 75%,100% 25%,50% -2%);-webkit-transition:.7s;transition:.7s;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .sponsor .hexagon:nth-child(3){margin-left:72px}
@@ -1434,7 +1434,7 @@ h6{font-size:.85rem}
 .sponsor .hexagon:hover{background-image:url("images/hexagon-hover.svg")}
 .sponsor-img{padding:15px;overflow:hidden}
 .sponsor-img img{max-height:75px;max-width:148px}
-.hexagon{background-image:url("images/hexagon.svg");background-size:cover;background-repeat:no-repeat;display:inline-block;fill:#c58429;height:225px;width:200px;-webkit-clip-path:polygon(0 25%,0 75%,50% 100%,100% 75%,100% 25%,50% 0);clip-path:polygon(0 25%,0 75%,50% 100%,100% 75%,100% 25%,50% 0);-webkit-transition:.7s;transition:.7s;margin:0 5px}
+.hexagon{background-image:url("images/hexagon.svg");background-size:cover;background-repeat:no-repeat;display:inline-block;fill:#c79249;height:225px;width:200px;-webkit-clip-path:polygon(0 25%,0 75%,50% 100%,100% 75%,100% 25%,50% 0);clip-path:polygon(0 25%,0 75%,50% 100%,100% 75%,100% 25%,50% 0);-webkit-transition:.7s;transition:.7s;margin:0 5px}
 .hexagon:hover{background-image:url("images/hexagon-hover.svg")}
 .cta{padding:15px;text-align:center}
 .cta-wrapper{border:3px solid #dbd0bd;padding:50px}

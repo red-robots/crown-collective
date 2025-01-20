@@ -54,7 +54,7 @@ get_header();
                 $image = $brand["sponsor_image"];
                 $url = $brand["sponsor_link"];
             ?>
-              <a class="hexagon" href="/vendors/#<?=$url->slug ?? '' ?>">
+              <a class="hexagon" href="<?php echo $url ?? '#' ?>" target="_blank">
                 <div class="sponsor-img">
                   <?php if( !empty( $image ) ){ ?>
                     <img src="<?php echo esc_url($image["url"]); ?>" alt="<?php echo esc_attr($image["alt"]); ?>" />
