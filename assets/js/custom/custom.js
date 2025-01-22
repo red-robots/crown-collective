@@ -143,16 +143,18 @@ $(document).on('click','#mobile-menu-toggle',function(e){
   e.preventDefault();
   $('body').toggleClass('mobile-menu-open');
   $('#site-navigation').toggleClass('active');
+  $('#masthead').toggleClass('active');
   $(this).toggleClass('active');
   $('.mobile-navigation').toggleClass('active');
 });
 
 $(document).on('click','#overlay',function(e){
-  e.preventDefault();
+  e.preventDefault(); 
   $(this).removeClass('active');
   $('body').removeClass('mobile-menu-open');
   $('#mobile-menu-toggle').removeClass('active');
   $('#site-navigation').removeClass('active');
+  $('#masthead').removeClass('active');
 });
 
 $(document).on("click", "a.mobile-parent-link", function(e) {

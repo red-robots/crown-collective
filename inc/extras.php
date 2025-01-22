@@ -2538,3 +2538,22 @@ function shortenDayName($day) {
 
 /*** Add image sizes ***/
 add_image_size( 'banner-image', 880, 550);
+
+/*** Add menu ***/
+add_action( 'after_setup_theme', 'register_mobile_menu' );
+
+function register_mobile_menu() {
+	register_nav_menu( 'mobile', __( 'Mobile Menu', 'theme-text-domain' ) );
+}
+
+add_action( 'after_setup_theme', 'register_left_menu' );
+
+function register_left_menu() {
+	register_nav_menu( 'left', __( 'Left Menu', 'theme-text-domain' ) );
+}
+
+add_action( 'after_setup_theme', 'register_right_menu' );
+
+function register_right_menu() {
+	register_nav_menu( 'right', __( 'Right Menu', 'theme-text-domain' ) );
+}

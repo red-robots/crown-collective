@@ -10,39 +10,20 @@ $white: #FFFFFF;
 $yellow: #c79249;
 $dark_blue: #007197;
 $light_green: #8dd1c5;
+$black: #000;
 
 $primary: $dark_brown;
-$submenu_color: $brown;
+$submenu_color: $white;
 $color_link: $green;
 $color_link_hover: $dark_brown;
 $color_link_active: $green;
 
 /*** Fonts ***/
-@font-face {
-  font-family: 'Raleway';
-  src: url('fonts/Raleway-Regular.ttf') format('ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Raleway Semibold';
-  src: url('fonts/Raleway-SemiBold.ttf') format('ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'PlayfairDisplay Regular';
-  src: url('fonts/PlayfairDisplay-Regular.ttf') format('ttf');
-  font-weight: normal;
-  font-style: normal;
-}
+@import url(//fonts.googleapis.com/css?family=Times+New+Roman);
+$times_new_roman: 'Times New Roman';
 
-$font-raleway-regular: 'Raleway';
-$font-raleway-semibold: 'Raleway Semibold';
-$font-playfair-regular: 'PlayfairDisplay Regular';
-
-$font_primary: $font-raleway-regular;
-$font_secondary: $font-playfair-regular;
+$font_primary: $times_new_roman;
+$font_secondary: $times_new_roman;
 
 /*** Sizes ***/
 $portrait:480px;

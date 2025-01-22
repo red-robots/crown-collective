@@ -140,6 +140,7 @@ jQuery(document).ready(function ($) {
     e.preventDefault();
     $('body').toggleClass('mobile-menu-open');
     $('#site-navigation').toggleClass('active');
+    $('#masthead').toggleClass('active');
     $(this).toggleClass('active');
     $('.mobile-navigation').toggleClass('active');
   });
@@ -149,6 +150,7 @@ jQuery(document).ready(function ($) {
     $('body').removeClass('mobile-menu-open');
     $('#mobile-menu-toggle').removeClass('active');
     $('#site-navigation').removeClass('active');
+    $('#masthead').removeClass('active');
   });
   $(document).on("click", "a.mobile-parent-link", function (e) {
     e.preventDefault();

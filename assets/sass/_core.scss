@@ -53,7 +53,6 @@ img {
   border-radius: 34px;
   display: inline-block;
   color: $white;
-  font-family: $font-raleway-semibold;
   font-size: 1.125rem; //18px
   height: 60px;
   padding: 19px 40px;
@@ -122,14 +121,20 @@ h6 {
 #site-logo {
   display: inline-block;
   width: 70px;
+  height: 70px;
   position: relative;
   transition: all ease .3s;
 
-  @include xs {
-    width: 90px;
+  svg {
+    fill: $white;
   }
 
-  a, img {
+  @include tab {
+    width: 90px;
+    height: 90px;
+  }
+
+  a, img, svg {
     display: block;
     width: 100%;
     height: auto;
@@ -149,7 +154,7 @@ h6 {
 .site-header {
   background: transparent;
   position: absolute;
-  padding: 30px 15px 0;
+  padding: 15px;
   z-index: 999;
   width: 100%;
 
@@ -199,10 +204,13 @@ h6 {
 /* Navigation */
 #site-navigation {
   transition: all ease .3s;
-  #navigation {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+  &.site-nav {
+    
+    position: relative;
+    
+    @include mid {
+      @include flexbox-justify(space-between);
+    }
   }
   ul.menu {
     margin: 0;
@@ -213,7 +221,7 @@ h6 {
   }
   ul.menu a {
     display: inline-block;
-    color: $brown;
+    color: $white;
     text-decoration: none;
     i {
       display: inline-block;
@@ -279,134 +287,132 @@ h6 {
 
   /* Mobile View */
   @include max($midwidth) {
-    display: block;
-    position: fixed;
-    top: 0;
-    right: -100vw;
-    max-width: 340px;
-    width: 100%;
-    height: 100%;
-    background: #FFF;
-    // z-index: 10000;
-    z-index: -999;
-    &:before {
-      content:"";
-      display: block;
-      width: 100%;
-      height: 85px;
-      background: #FFF;
-      border-bottom: 1px dashed $border_cream;
-      position: absolute;
-      top: 0;
-      right: 0;
-      z-index: 50;
-    }
-    #navigation {
-      display: block;
-      height: 100%;
-      padding-bottom: 100px;
-      overflow: auto;
-    }
-    #navigation > ul.menu {
-      padding-top: 85px;
-      padding-bottom: 20px;
-    }
-    ul.menu,
-    ul.menu > li  {
-      width: 100%;
-      float: left;
-    }
-    ul.menu > li {
-      border-bottom: 1px dashed #e0e0e0;
-    }
-    ul.menu>li>a {
-      display: inline-block;
-      font-size: 1.2em;
-      line-height: 1.2;
-      padding: 15px 28px;
-      position: static;
-      width: 100%;
-    }
-    ul.menu {
-      ul.sub-menu {
-        display: none!important;
-        width: 100%;
-        a {
-          font-size: 1em;
-          line-height: 1.1;
-          padding: 12px 20px 12px 25px;
-        }
-      }
+    #menu-left,
+    #menu-right {
+      display: none;
     }
 
-    ul.menu > li.menu-item-has-children > a {
-      i {
-        display: block;
-        width: 70px;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 1005;
-        border-left: 1px solid #e0e0e0;
-        &:before, &:after {
+    #navigation {
+      display: block;
+      position: fixed;
+      top: -100vh;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #FFF;
+      // z-index: 10000;
+      z-index: -999;
+      overflow: auto;
+      
+      #mobile-menu {
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      ul.menu,
+      ul.menu > li  {
+        width: 100%;
+        float: left;
+      }
+      ul.menu > li {
+        border-bottom: 1px solid #e0e0e0;
+
+        &:first-child {
+          border-top: 1px solid #e0e0e0;
+        }
+      }
+      ul.menu>li>a {
+        color: $dark_blue;
+        display: inline-block;
+        font-size: 1.2em;
+        line-height: 1.2;
+        padding: 15px 28px;
+        width: 100%;
+      }
+      ul.menu {
+        ul.sub-menu {
+          display: none!important;
+          width: 100%;
+          a {
+            font-size: 1em;
+            line-height: 1.1;
+            padding: 12px 20px 12px 25px;
+          }
+        }
+      }
+
+      ul.menu > li.menu-item-has-children > a {
+        i {
+          display: block;
+          width: 70px;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          right: 0;
+          z-index: 1005;
+          border-left: 1px solid #e0e0e0;
+          &:before, &:after {
+            content:"";
+            display: block;
+            width: 13px;
+            height: 2px;
+            background: $primary;
+            position: absolute;
+            top: 35px;
+            left: 22px;
+          }
+          &:before {
+            transform: translateY(-7px) rotate(45deg);
+          }
+          &:after {
+            transform: translate(8px, -7px) rotate(-45deg);
+          }
+        }
+      }
+      ul.menu > li:hover > a,
+      ul.menu > li.current_page_item > a {
+        color: $primary;
+      }
+      ul.menu > li.current_page_item > a {
+        &:before {
           content:"";
           display: block;
-          width: 13px;
-          height: 2px;
-          background: $primary;
+          width: 7px;
+          height: 100%;
           position: absolute;
-          top: 35px;
-          left: 22px;
-        }
-        &:before {
-          transform: translateY(-7px) rotate(45deg);
-        }
-        &:after {
-          transform: translate(8px, -7px) rotate(-45deg);
+          top: 0;
+          left: 0;
         }
       }
-    }
-    ul.menu > li:hover > a,
-    ul.menu > li.current_page_item > a {
-      color: $primary;
-    }
-    ul.menu > li.current_page_item > a {
-      &:before {
-        content:"";
-        display: block;
-        width: 7px;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
+      ul.menu > li.current_page_item,
+      ul.menu > li:hover {
+        border-color: $primary;
+      }
+      ul.menu > li.open-dropdown > ul.sub-menu {
+        display: block!important;
+        position: relative;
+        opacity: 1!important;
+        z-index: 10000!important;
+        padding-top: 10px!important;
+        padding-bottom: 10px!important;
+      }
+      ul.menu>li>a:after {display:none!important;}
+      &.active {
+        top: 130px;
+        z-index: 10000;
       }
     }
-    ul.menu > li.current_page_item,
-    ul.menu > li:hover {
-      border-color: $primary;
+    
+    @include max($portrait) {
+      max-width: 100%;
     }
-    ul.menu > li.open-dropdown > ul.sub-menu {
-      display: block!important;
-      position: relative;
-      opacity: 1!important;
-      z-index: 10000!important;
-      padding-top: 10px!important;
-      padding-bottom: 10px!important;
-    }
-    ul.menu>li>a:after {display:none!important;}
-    &.active {
-      right: 0;
-      z-index: 10000;
-    }
-  }
-  
-  @include max($portrait) {
-    max-width: 100%;
   }
 }
 
-.mobile-menu {
+#closeMobileNav {
+  display: none;
+}
+
+#site-navigation .mobile-menu {
   display: none;
   @include max($midwidth) {
     cursor: pointer;
@@ -415,7 +421,7 @@ h6 {
     height: 50px;
     background: transparent;
     position: absolute;
-    top: 3px;
+    top: 6px;
     right: 5px;
     i {
       display: block;
@@ -428,7 +434,7 @@ h6 {
     span.bar:after {
       display: block;
       height: 3px;
-      background: $brown;
+      background: $white;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -446,7 +452,7 @@ h6 {
     &.active {
       right: 0;
       z-index: 99999;
-      transform: scale(0.75);
+      // transform: scale(0.75);
       span.bar {
         transform: translate(-50%) rotate(45deg);
       }
@@ -484,6 +490,22 @@ h6 {
 @media screen and (max-width:819px) {
   .site-header {
     z-index: 999998;
+
+    &.active, &:hover {
+      background-color: $white;
+
+      #site-navigation {
+        #site-logo svg {
+          fill: $black;
+        }
+
+        span.bar,
+        span.bar:before,
+        span.bar:after {
+          background-color: $black;
+        }
+      }
+    }
   }
   .mobile-navigation.active {
     background-color: rgba(0, 0, 0, .85);
@@ -640,7 +662,6 @@ h6 {
 .homepage-content {    
   .title {
     color: $brown;
-    font-family: $font-playfair-regular;
     margin-bottom: 30px;
   }
 
@@ -897,7 +918,6 @@ h6 {
 
   .title {
     color: $brown;
-    font-family: $font-playfair-regular;
     font-size: 3.1rem;
     margin-bottom: 30px;
 
@@ -1097,7 +1117,6 @@ h6 {
 
   .title {
     color: $white;
-    font-family: $font-playfair-regular;
     text-align: center;
     font-size: 2.25rem; /* px */
 
@@ -1485,7 +1504,7 @@ h6 {
       position: relative;
 
       .events-date {
-        font-family: $font-raleway-semibold;
+    
         @include font-size-20();
       }
     }
@@ -1549,7 +1568,6 @@ h6 {
 
     span {
       color: $light_brown;
-      font-family: $font-playfair-regular;
       font-size: 1.9em; //30px
       position: relative;
       z-index: 2;
@@ -1615,7 +1633,7 @@ h6 {
 
     .by-category {
       color: $brown;
-      font-family: $font-raleway-semibold;
+  
       @include font-size-20();
       margin-bottom: 25px;
     }
@@ -1757,7 +1775,6 @@ h6 {
 
   &-title {
     color: $brown;
-    font-family: $font-playfair-regular;
     @include font-size-20();
     font-weight: 600;
     margin-bottom: 5px;
@@ -1765,7 +1782,7 @@ h6 {
 
   &-cat {
     color: $green;
-    font-family: $font-raleway-semibold;
+
     @include font-size-18();
     text-transform: lowercase;
   }
@@ -2162,7 +2179,7 @@ h6 {
       position: relative;
 
       .events-date {
-        font-family: $font-raleway-semibold;
+    
         @include font-size-20();
       }
     }
@@ -2269,7 +2286,7 @@ h6 {
   &-start-end,
   &-location {
     color: $blue;
-    font-family: $font-raleway-semibold;
+
     line-height: 22px;
   }
 
@@ -2419,7 +2436,6 @@ h6 {
         border-bottom: 3px solid $border_cream;
         color: $brown;
         @include font-size-30();
-        font-family: $font-playfair-regular;
         margin-bottom: 30px;
         padding-bottom: 15px;
       }
@@ -2438,7 +2454,6 @@ h6 {
       &-title {
         border-bottom: 3px solid $light_brown;
         color: $green;
-        font-family: $font-playfair-regular;
         font-size: 1.55rem; //25px
         font-weight: bold;
         margin-bottom: 30px;
@@ -2448,7 +2463,7 @@ h6 {
       &-address,
       &-phone {
         color: $brown;
-        font-family: $font-raleway-semibold;
+    
         @include font-size-20();
         margin-bottom: 20px;
       }
@@ -2521,7 +2536,7 @@ h6 {
         border-radius: 34px;
         display: inline-block;
         color: $green;
-        font-family: $font-raleway-semibold;
+    
         font-size: 1.125rem; //18px
         height: 60px;
         padding: 19px 40px;
@@ -2542,7 +2557,7 @@ h6 {
     background-color: $white;
     border-radius: 25px;
     color: $brown;
-    font-family: $font-raleway-semibold;
+
     font-style: italic;
     padding: 15px 40px;
   }
