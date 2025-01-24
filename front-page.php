@@ -42,7 +42,7 @@ get_header();
 
     if( $sponsor ){
   ?>
-    <div class="sponsor padding-tb-150">
+    <div class="sponsor">
       <div class="wrapper">
         <h2 class="sponsor-title"><?php echo $sponsor_title; ?></h2>
         <div class="sponsor-content">

@@ -954,6 +954,13 @@ h6 {
 .sponsor {
   background-color: $dark_blue;
   text-align: center;
+  padding-top: 70px;
+  padding-bottom: 100px;
+
+  @include desk {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
 
   .wrapper {
     max-width: 950px;
@@ -961,7 +968,7 @@ h6 {
 
   &-title {
     color: $yellow;
-    font-size: 32px;
+    font-size: 36px;
     margin-bottom: 15px;
 
     @include tab {
@@ -975,7 +982,7 @@ h6 {
 
   &-content {
     color: $yellow;
-    font-size: 18px;
+    font-size: 20px;
 
     @include tab {
       font-size: 24px;
