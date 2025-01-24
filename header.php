@@ -44,15 +44,15 @@ var params={};location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi,function(s,k,v){
 
 	<header id="masthead" class="site-header" role="banner">
         <div id="site-navigation" class="site-nav flexwrap">
-            <?php if ( has_nav_menu( 'mobile' ) ){ ?>
+            <!-- <?php if ( has_nav_menu( 'mobile' ) ){ ?>
                 <span class="mobile-menu" id="mobile-menu-toggle"><span class="bar"></span><i>Menu</i></span>
                 <nav id="navigation" class="mobile-menu mobile-navigation animated fadeIn" role="navigation">
                     <?php wp_nav_menu( array( 'theme_location' => 'mobile', 'container'=>false, 'menu_id' => 'mobile-menu') ); ?>
                 </nav>
                 <span id="closeMobileNav"></span>
-            <?php } ?>
+            <?php } ?> -->
 
-            <?php wp_nav_menu( array( 'theme_location' => 'left', 'container'=>false, 'menu_id' => 'menu-left', 'container_class' => 'menu-left menu-desktop') ); ?>
+            <?php //wp_nav_menu( array( 'theme_location' => 'left', 'container'=>false, 'menu_id' => 'menu-left', 'container_class' => 'menu-left menu-desktop') ); ?>
 
             <div id="site-logo">
                 <a href="<?php echo get_home_url(); ?>">
@@ -60,7 +60,7 @@ var params={};location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi,function(s,k,v){
                 </a>
             </div>
             
-            <?php wp_nav_menu( array( 'theme_location' => 'right', 'container'=>false, 'menu_id' => 'menu-right', 'container_class' => 'menu-right menu-desktop') ); ?>
+            <!-- <?php wp_nav_menu( array( 'theme_location' => 'right', 'container'=>false, 'menu_id' => 'menu-right', 'container_class' => 'menu-right menu-desktop') ); ?> -->
         </div>
 	</header><!-- #masthead -->
 

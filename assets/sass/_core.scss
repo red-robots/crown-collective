@@ -209,7 +209,8 @@ h6 {
     position: relative;
     
     @include mid {
-      @include flexbox-justify(space-between);
+      // @include flexbox-justify(space-between);
+      @include flexbox-justify(center);
     }
   }
   ul.menu {
@@ -488,28 +489,28 @@ h6 {
 }
 
 @media screen and (max-width:819px) {
-  .site-header {
-    z-index: 999998;
+  // .site-header {
+  //   z-index: 999998;
 
-    &.active, &:hover {
-      background-color: $white;
+  //   &.active, &:hover {
+  //     background-color: $white;
 
-      #site-navigation {
-        #site-logo svg {
-          fill: $black;
-        }
+  //     #site-navigation {
+  //       #site-logo svg {
+  //         fill: $black;
+  //       }
 
-        span.bar,
-        span.bar:before,
-        span.bar:after {
-          background-color: $black;
-        }
-      }
-    }
-  }
-  .mobile-navigation.active {
-    background-color: rgba(0, 0, 0, .85);
-  }
+  //       span.bar,
+  //       span.bar:before,
+  //       span.bar:after {
+  //         background-color: $black;
+  //       }
+  //     }
+  //   }
+  // }
+  // .mobile-navigation.active {
+  //   background-color: rgba(0, 0, 0, .85);
+  // }
 }
 
 /*** Footer ***/
@@ -520,7 +521,6 @@ h6 {
 
   &-logo {
     width: 103px;
-    padding-right: 15px;
 
     a, img {
       width: 100%;
@@ -546,7 +546,8 @@ h6 {
     max-width: 400px;
 
     @include max($xswidth) {
-      margin-top: 15px;;
+      margin-top: 60px;
+      margin-bottom: 40px;
     }
 
     .gform_title {
@@ -556,7 +557,13 @@ h6 {
     
     .gform_description {
       color: $dark_blue;
+      font-family: $sans-serif;
       font-size: 22px;
+      text-transform: uppercase;
+    }
+
+    .gform_footer {
+      margin: 0;
     }
 
     #gform_fields_1 {
@@ -588,10 +595,18 @@ h6 {
 
     #field_1_1 input {
       text-align: left;
+      outline: none;
     }
 
     #field_submit {
-      width: 40%;
+      width: 48%;
+
+      input {
+        font-size: 18px;
+        letter-spacing: 1px;
+        font-family: $sans-serif;
+        text-transform: uppercase;
+      }
     }
   }
 
@@ -616,8 +631,7 @@ h6 {
       text-align: center;
 
       a {
-        margin-left: 0;
-        margin-right: 15px;
+        margin: 0;
       }
     }
   }
@@ -692,7 +706,7 @@ h6 {
     background-position: center center;
     background-size: cover;
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 0;
     height: 570px;
     width: 100%;
     @include flexgroup-center();
@@ -709,7 +723,7 @@ h6 {
     }
 
     @include desk {
-      height: 970px;
+      height: 900px;
     }
   }
 
@@ -2751,12 +2765,12 @@ h6 {
 }
 
 /*** Admin bar ***/
-@include max($tabwidth) {
-  html { margin-top: 32px; }
-}
-@include max($xswidth) {
-  html { margin-top: 46px; }
-}
+// @include max($tabwidth) {
+//   html { margin-top: 32px; }
+// }
+// @include max($xswidth) {
+//   html { margin-top: 46px; }
+// }
 
 /*** Margins in homepage ***/
 @include max($xxxl){

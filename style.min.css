@@ -1,4 +1,4 @@
-@import "//fonts.googleapis.com/css?family=Times+New+Roman";/*!
+@import "https://fonts.googleapis.com/css?family=Times+New+Roman";/*!
 Theme Name: Crown Collective
 Theme URI: https://bellaworksweb.com/
 Author: Bellaworksweb
@@ -1092,6 +1092,7 @@ button:focus{outline:0}
 .fa-youtube-square:before{content:""}
 .sr-only{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}
 .sr-only-focusable:active,.sr-only-focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}
+@font-face{font-family:"engraversgothic_btregular";src:url("fonts/engravers_gothic_bt-webfont") format("ttf"),url("fonts/engravers_gothic_bt-webfont.woff2") format("woff2"),url("fonts/engravers_gothic_bt-webfont.woff") format("woff");font-weight:normal;font-style:normal}
 /*!
  * animate.css -https://daneden.github.io/animate.css/
  * Version - 3.7.2
@@ -1376,18 +1377,20 @@ h6{font-size:.85rem}
 .mobile-navigation{display:block;position:fixed;top:0;right:-100%;max-width:100%;width:100%;height:100%;overflow-x:hidden;overflow-y:auto;-webkit-transition:all ease .3s;transition:all ease .3s;z-index:-999}
 .mobile-navigation.active{right:0;z-index:500}
 .footer{background-color:#8dd1c5;padding-top:50px;padding-bottom:50px}
-.footer-logo{width:103px;padding-right:15px}
+.footer-logo{width:103px}
 .footer-logo a,.footer-logo img{width:100%;display:block;height:auto;float:left}
 .footer-inner{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-self:center;-ms-flex-item-align:center;align-self:center}
 .footer-newsletter{text-align:center;max-width:400px}
 .footer-newsletter .gform_title{color:#007197;font-size:24px}
-.footer-newsletter .gform_description{color:#007197;font-size:22px}
+.footer-newsletter .gform_description{color:#007197;font-family:"engraversgothic_btregular",serif;font-size:22px;text-transform:uppercase}
+.footer-newsletter .gform_footer{margin:0}
 .footer-newsletter #gform_fields_1{border:1px solid #007197;-webkit-column-gap:0;-moz-column-gap:0;column-gap:0;display:-webkit-box;display:-ms-flexbox;display:flex;width:400px}
 .footer-newsletter #field_1_1,.footer-newsletter #field_submit{width:150%}
 .footer-newsletter #field_1_1 input,.footer-newsletter #field_submit input{background:transparent;border:0;-webkit-box-shadow:none;box-shadow:none;color:#007197}
 .footer-newsletter #field_1_1 input:hover,.footer-newsletter #field_submit input:hover{color:#c79249}
-.footer-newsletter #field_1_1 input{text-align:left}
-.footer-newsletter #field_submit{width:40%}
+.footer-newsletter #field_1_1 input{text-align:left;outline:0}
+.footer-newsletter #field_submit{width:48%}
+.footer-newsletter #field_submit input{font-size:18px;letter-spacing:1px;font-family:"engraversgothic_btregular",serif;text-transform:uppercase}
 .footer .social-media{text-align:right}
 .footer .social-media a{color:#007197;display:inline-block;font-size:2rem;margin-left:15px;text-align:center}
 .footer .social-media a:hover{color:#c79249}
@@ -1400,7 +1403,7 @@ h6{font-size:.85rem}
 .banner{position:relative;width:100%;z-index:2}
 .banner .swiper{overflow:visible}
 .banner .swiper-slide{overflow:visible}
-.banner-item{background-repeat:no-repeat;background-position:center center;background-size:cover;padding-top:100px;padding-bottom:100px;height:570px;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-align-self:center;-ms-flex-item-align:center;align-self:center}
+.banner-item{background-repeat:no-repeat;background-position:center center;background-size:cover;padding-top:100px;padding-bottom:0;height:570px;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-align-self:center;-ms-flex-item-align:center;align-self:center}
 .banner-item.swiper-slide{display:-webkit-box;display:-ms-flexbox;display:flex}
 .banner-logo{margin-bottom:50px;width:100%}
 .banner-image{height:100%;margin:0 auto;max-width:280px;width:100%;position:relative;z-index:2}
@@ -1665,7 +1668,7 @@ h6{font-size:1.2rem}
 .team-image{width:40%;max-width:100%}
 .contact-page .contact-showroom{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin-bottom:70px}
 .contact-page .contact-details,.contact-page .contact-gmaps{width:50%}
-}@media(min-width:960px){#site-navigation.site-nav{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
+}@media(min-width:960px){#site-navigation.site-nav{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 #site-navigation ul.menu>li{margin:0 12px}
 #site-navigation ul.menu>li.current_page_item>a,#site-navigation ul.menu>li:hover>a{border-color:#91a796}
 .about-banner-image-wrap{margin-top:100px}
@@ -1680,7 +1683,7 @@ h6{font-size:1.2rem}
 .content-default section .resources{float:left;width:50%}
 }@media(min-width:1200px){#site-navigation ul.menu>li{margin:0 16px}
 .homepage-content .description{font-size:1.25rem}
-.banner-item{height:970px}
+.banner-item{height:900px}
 .banner-logo{max-width:820px;margin-bottom:125px;width:100%}
 .banner-image{height:650px}
 .banner-content{width:50%}
@@ -1807,24 +1810,17 @@ h6{font-size:1.2rem}
 .events-banner-image-wrap{margin-bottom:50px}
 .events-banner-image-wrap:after{height:320px;width:270px;right:-35px}
 .content-default-banner .flexwrap{-webkit-box-orient:vertical;-webkit-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}
-html{margin-top:32px}
-}@media screen and (max-width:819px){.site-header{z-index:999998}
-.site-header.active,.site-header:hover{background-color:#fff}
-.site-header.active #site-navigation #site-logo svg,.site-header:hover #site-navigation #site-logo svg{fill:#000}
-.site-header.active #site-navigation span.bar,.site-header.active #site-navigation span.bar:before,.site-header.active #site-navigation span.bar:after,.site-header:hover #site-navigation span.bar,.site-header:hover #site-navigation span.bar:before,.site-header:hover #site-navigation span.bar:after{background-color:#000}
-.mobile-navigation.active{background-color:rgba(0,0,0,.85)}
 }@media screen and (max-width:600px){.footer-inner{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}
-.footer-newsletter{margin-top:15px}
+.footer-newsletter{margin-top:60px;margin-bottom:40px}
 .footer-newsletter #gform_fields_1{width:345px}
 .footer .social-media{padding:0;width:100%;text-align:center}
-.footer .social-media a{margin-left:0;margin-right:15px}
+.footer .social-media a{margin:0}
 .diff-exp .exp-item{margin-top:30px}
 .team-banner-image{height:100%;margin:0 auto;max-width:300px}
 .events-banner-image{width:340px}
 .events-banner-image:before{height:70px;width:70px}
 .events-banner-image-wrap{width:100%;max-width:340px}
 .events-banner-image-wrap:after{height:320px;width:270px;right:-70px}
-html{margin-top:46px}
 }@media(print),(prefers-reduced-motion:reduce){.animated{-webkit-animation-duration:1ms !important;animation-duration:1ms !important;-webkit-transition-duration:1ms !important;transition-duration:1ms !important;-webkit-animation-iteration-count:1 !important;animation-iteration-count:1 !important}
 }@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}
 100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}

@@ -19,8 +19,18 @@ $color_link_hover: $dark_brown;
 $color_link_active: $green;
 
 /*** Fonts ***/
-@import url(//fonts.googleapis.com/css?family=Times+New+Roman);
+@import url(https://fonts.googleapis.com/css?family=Times+New+Roman);
 $times_new_roman: 'Times New Roman';
+
+@font-face {
+    font-family: 'engraversgothic_btregular';
+    src: url('fonts/engravers_gothic_bt-webfont') format('ttf'),
+		url('fonts/engravers_gothic_bt-webfont.woff2') format('woff2'),
+        url('fonts/engravers_gothic_bt-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+$sans-serif: 'engraversgothic_btregular', serif;
 
 $font_primary: $times_new_roman;
 $font_secondary: $times_new_roman;
