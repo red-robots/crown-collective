@@ -1430,8 +1430,7 @@ h6{font-size:.85rem}
 .sponsor-title{color:#c79249;font-size:36px;margin-bottom:15px}
 .sponsor-content{color:#c79249;font-size:20px}
 .sponsor-wrapper{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;gap:10px;max-width:325px;margin:30px auto 0}
-.sponsor .hexagon{background-image:url("images/hexagon.svg");background-size:cover;background-repeat:no-repeat;display:inline-block;height:225px;width:200px}
-.sponsor .hexagon{background-image:url("images/hexagon.svg");background-size:cover;background-repeat:no-repeat;height:128px;width:114px;-webkit-clip-path:polygon(0 25%,0 75%,50% 102%,100% 75%,100% 25%,50% -2%);clip-path:polygon(0 25%,0 75%,50% 102%,100% 75%,100% 25%,50% -2%);-webkit-transition:.7s;transition:.7s;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.sponsor .hexagon{background-image:url("images/hexagon.svg");background-size:cover;background-repeat:no-repeat;height:128px;width:114px;-webkit-clip-path:polygon(0 25%,0 75%,50% 102%,100% 75%,100% 25%,50% -2%);clip-path:polygon(0 25%,0 75%,50% 102%,100% 75%,100% 25%,50% -2%);-webkit-transition:.7s;transition:.7s;margin:0 5px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .sponsor .hexagon:nth-child(3){margin-left:72px}
 .sponsor .hexagon:nth-child(3),.sponsor .hexagon:nth-child(4){margin-top:-33px}
 .sponsor .hexagon:hover{background-image:url("images/hexagon-hover.svg")}
@@ -1621,6 +1620,7 @@ h6{font-size:.85rem}
 .content-default section .resources li a:hover{color:#84735e}
 @media(min-width:600px){.banner-image{height:475px;max-width:400px}
 .sponsor-wrapper{max-width:100%;gap:15px;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+.sponsor .hexagon{margin:0}
 .sponsor .hexagon:nth-child(3),.sponsor .hexagon:nth-child(4){margin:0}
 .diff-exp .exp-item{margin-bottom:30px;width:49%}
 .vendors-banner:after{width:278px}
