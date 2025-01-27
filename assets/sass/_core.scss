@@ -613,6 +613,10 @@ h6 {
   .social-media {
     text-align: right;
 
+    @include tab {
+      min-width: 133px;
+    }
+
     a {
       color: $dark_blue;
       display: inline-block;
@@ -1049,7 +1053,7 @@ h6 {
 
     @include xs {
       margin: 0;
-      
+
       &:nth-child(3),
       &:nth-child(4){
         margin: 0;
