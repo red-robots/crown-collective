@@ -70,26 +70,6 @@ get_header();
     </div><!-- brands -->
   <?php } ?>
 
-  <!-- <?php
-    $cta = get_field("call_to_action");
-    $cta_title = $cta["cta_title"];
-    $cta_description = $cta["cta_description"];
-    $cta_button = $cta["cta_button_title"];
-    $cta_button_link = $cta["cta_button_title_link"];
-
-    if( $cta_title ){
-  ?>
-    <div class="cta">
-      <div class="cta-wrapper">
-        <h2 class="cta-title"><?php echo $cta_title; ?></h2>
-        <div class="cta-description"><?php echo $cta_description; ?></div>
-        <?php if($cta_button){ ?>
-          <a href="<?php echo $cta_button_link; ?>" class="button btn-white"><?php echo $cta_button; ?></a>
-        <?php } ?>
-      </div>
-    </div><!-- cta -->
-  <?php } ?> -->
-
   <?php
     $pre_footer = get_field("pre_footer");
     $pre_footer_img = $pre_footer["pre_footer_image"];
