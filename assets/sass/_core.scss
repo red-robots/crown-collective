@@ -1045,7 +1045,10 @@ h6 {
     &:nth-child(3),
     &:nth-child(4){
       margin-top: -33px;
-      width: auto;
+      
+      img {
+        width: auto;
+      }
     }
 
     @include flexbox();
