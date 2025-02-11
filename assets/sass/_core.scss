@@ -1055,8 +1055,13 @@ h6 {
     @include flexbox-justify(center);
     @include flexbox-align-items(center);
     
-    &:hover {
+    &:hover,
+    &:focus {
       background-image: url('images/hexagon-hover.svg');
+      background-size: 100%;
+      -webkit-background-size: 100%;
+      -moz-background-size: 100%;
+      -o-background-size: 100%;
     }
 
     @include xs {
