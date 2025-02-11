@@ -1433,7 +1433,7 @@ h6{font-size:.85rem}
 .sponsor-wrapper{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;gap:10px;max-width:325px;margin:30px auto 0}
 .sponsor .hexagon{background-image:url("images/hexagon.svg");background-size:cover;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-repeat:no-repeat;height:128px;width:114px;-webkit-transition:.7s;transition:.7s;margin:0 5px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .sponsor .hexagon:nth-child(3){margin-left:72px}
-.sponsor .hexagon:nth-child(3),.sponsor .hexagon:nth-child(4){margin-top:-33px}
+.sponsor .hexagon:nth-child(3),.sponsor .hexagon:nth-child(4){margin-top:-33px;width:auto}
 .sponsor .hexagon:hover{background-image:url("images/hexagon-hover.svg")}
 .sponsor-img{padding:15px;overflow:hidden}
 .sponsor-img img{max-height:75px;max-width:130px}
