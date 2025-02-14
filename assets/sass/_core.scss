@@ -1017,15 +1017,8 @@ h6 {
     }
   }
 
-
-  // .hexagon {
-  //   display: inline-block;
-  //   height: 225px;
-  //   width: 200px;
-  // }
-
   .hexagon {
-    background-image: url('images/hexagon.svg');
+    background-image: url('images/hexagon.png');
     background-size: 100%;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
@@ -1057,11 +1050,7 @@ h6 {
     
     &:hover,
     &:focus {
-      background-image: url('images/hexagon-hover.svg');
-      background-size: 100%;
-      -webkit-background-size: 100%;
-      -moz-background-size: 100%;
-      -o-background-size: 100%;
+      background-image: url('images/hexagon-hover.png');
     }
 
     @include xs {

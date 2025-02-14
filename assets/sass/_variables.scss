@@ -23,14 +23,12 @@ $color_link_active: $green;
 $times_new_roman: 'Times New Roman';
 
 @font-face {
-    font-family: 'times_regular-webfont';
-    src: url('fonts/times_regular-webfont') format('ttf'),
-		url('fonts/times_regular-webfont.woff2') format('woff2'),
-        url('fonts/times_regular-webfont.woff') format('woff');
+    font-family: 'Times';
+    src: url('fonts/Times') format('ttf');
     font-weight: normal;
     font-style: normal;
 }
-$times: 'times_regular-webfont', serif;
+$times: 'Times', serif;
 
 @font-face {
     font-family: 'engraversgothic_btregular';
@@ -42,8 +40,8 @@ $times: 'times_regular-webfont', serif;
 }
 $sans-serif: 'engraversgothic_btregular', serif;
 
-$font_primary: $times_new_roman;
-$font_secondary: $times_new_roman;
+$font_primary: $times;
+$font_secondary: $times;
 
 /*** Sizes ***/
 $portrait:480px;
