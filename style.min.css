@@ -1434,7 +1434,7 @@ h6{font-size:.85rem}
 .sponsor .hexagon{background-image:url("images/hexagon.png");background-size:100%;-webkit-background-size:100%;-moz-background-size:100%;-o-background-size:100%;background-repeat:no-repeat;height:128px;width:114px;-webkit-transition:.7s;transition:.7s;margin:0 5px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .sponsor .hexagon:nth-child(3),.sponsor .hexagon:nth-child(7),.sponsor .hexagon:nth-child(11){margin-left:72px}
 .sponsor .hexagon:nth-child(3),.sponsor .hexagon:nth-child(4),.sponsor .hexagon:nth-child(5),.sponsor .hexagon:nth-child(6),.sponsor .hexagon:nth-child(7),.sponsor .hexagon:nth-child(8),.sponsor .hexagon:nth-child(9),.sponsor .hexagon:nth-child(10){margin-top:-33px}
-.sponsor .hexagon:nth-child(3) img,.sponsor .hexagon:nth-child(4) img,.sponsor .hexagon:nth-child(5) img,.sponsor .hexagon:nth-child(6) img,.sponsor .hexagon:nth-child(7) img,.sponsor .hexagon:nth-child(8) img,.sponsor .hexagon:nth-child(9) img,.sponsor .hexagon:nth-child(10) img{width:auto}
+.sponsor .hexagon:nth-child(3) img,.sponsor .hexagon:nth-child(4) img,.sponsor .hexagon:nth-child(5) img,.sponsor .hexagon:nth-child(6) img,.sponsor .hexagon:nth-child(7) img,.sponsor .hexagon:nth-child(8) img,.sponsor .hexagon:nth-child(9) img,.sponsor .hexagon:nth-child(10) img{width:100%}
 .sponsor .hexagon:hover,.sponsor .hexagon:focus{background-image:url("images/hexagon-hover.png")}
 .sponsor-img{padding:15px;overflow:hidden}
 .sponsor-img img{max-height:75px;max-width:130px}
@@ -1696,6 +1696,7 @@ h6{font-size:1.2rem}
 .sponsor-title{font-size:68px}
 .sponsor-content{font-size:32px}
 .sponsor .hexagon{height:225px;width:200px}
+.sponsor .hexagon:nth-child(5){margin-top:-45px}
 .sponsor-img img{max-height:110px}
 .cta .cta-description{font-size:1.25rem}
 .pre-footer .title{font-size:4rem}
