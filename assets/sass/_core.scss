@@ -1031,18 +1031,27 @@ h6 {
     transition: .7s;
     margin: 0 5px;
 
-    &:nth-child(3){
+    &:nth-child(3),
+    &:nth-child(7),
+    &:nth-child(11){
       margin-left: 72px;
     }
 
     &:nth-child(3),
-    &:nth-child(4){
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(6),
+    &:nth-child(7),
+    &:nth-child(8),
+    &:nth-child(9),
+    &:nth-child(10){
       margin-top: -33px;
       
       img {
         width: auto;
       }
     }
+
 
     @include flexbox();
     @include flexbox-justify(center);
@@ -1057,7 +1066,13 @@ h6 {
       margin: 0;
 
       &:nth-child(3),
-      &:nth-child(4){
+      &:nth-child(4),
+      &:nth-child(5),
+      &:nth-child(6),
+      &:nth-child(7),
+      &:nth-child(8),
+      &:nth-child(9),
+      &:nth-child(10){
         margin: 0;
       }
     }
